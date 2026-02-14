@@ -90,6 +90,7 @@ export type Database = {
           name: string
           topic: string
           updated_at: string
+          user_id: string | null
         }
         Insert: {
           chair_report: string
@@ -99,6 +100,7 @@ export type Database = {
           name: string
           topic: string
           updated_at?: string
+          user_id?: string | null
         }
         Update: {
           chair_report?: string
@@ -108,6 +110,7 @@ export type Database = {
           name?: string
           topic?: string
           updated_at?: string
+          user_id?: string | null
         }
         Relationships: []
       }
